@@ -1,4 +1,4 @@
-# HOMYFOOD
+# HoMyFood
 
 *Création du site* **Ohmyfood** *Paris*
 
