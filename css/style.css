@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/*  BOUTONS  */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-family: 'Shrikhand', cursive;
+}
+
+a:visited, a:active, a:focus {
+  outline: none;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*  Bouton page Accueil  */
+.explore {
+  width: 220px;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 0.95em;
+  color: #ffffff;
+  margin-bottom: 60px;
+  border: 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
+          box-shadow: 0px 3px 4px 2px #d3d3d3;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
+  background: linear-gradient(0, #9356dc, #ff79da);
+}
+
+/*  Bouton pages menu  */
+.command {
+  width: 190px;
+  height: 50px;
+  font-family: "Roboto";
+  font-size: 0.95em;
+  color: #ffffff;
+  margin-bottom: 30px;
+  border: 0;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
+          box-shadow: 0px 3px 4px 2px #d3d3d3;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
+  background: linear-gradient(0, #9356dc, #ff79da);
+}
+
+.command:hover,
+.explore:hover {
+  -webkit-box-shadow: 0px 3px 4px 2px #6d6d6d;
+          box-shadow: 0px 3px 4px 2px #6d6d6d;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#a16be0), to(#ff93e1));
+  background: linear-gradient(0, #a16be0, #ff93e1);
+  -webkit-transition: 750ms;
+  transition: 750ms;
+}
+
+header {
+  width: 95%;
+  margin: auto;
+  font-family: "Shrikhand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px 0 10px 0;
+}
+
+header a:visited {
+  color: #000000;
+}
+
+header .fa-arrow-left {
+  position: absolute;
+  z-index: 0;
+  text-align: left;
+  top: 30px;
+  left: 12%;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+  line-height: 1.6rem;
+  padding: 18px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 30px;
+}
+
+footer h2 {
+  font-family: 'Shrikhand';
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+footer .fa-hands-helping {
+  font-size: 0.7rem;
+}
+
+footer .fas {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+form {
+  background-color: #f5f5f5;
+  font-family: "Roboto";
+  text-align: center;
+  width: 100%;
+  /*  CHAMP DE SAISIE  */
+  /*  ICONE LOCALISATION  */
+}
+
+form h1 {
+  font-family: "Roboto";
+  font-size: 1.8em;
+  padding: 3% 14% 0 14%;
+}
+
+form p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+form .search {
+  width: 100%;
+  height: 50px;
+  color: #000000;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 600px;
+  background-color: #e0e0e0;
+  border: none;
+  -webkit-box-shadow: inset 0 2px 3px #828282;
+          box-shadow: inset 0 2px 3px #828282;
+}
+
+form .search::-webkit-input-placeholder {
+  color: #000000;
+}
+
+form .search:-ms-input-placeholder {
+  color: #000000;
+}
+
+form .search::-ms-input-placeholder {
+  color: #000000;
+}
+
+form .search::placeholder {
+  color: #000000;
+}
+
+form .fa-map-marker-alt {
+  color: #000000;
+  position: relative;
+  z-index: 0;
+  right: 18%;
+  top: 33px;
+}
+
+#fonc {
+  width: 100%;
+  margin-top: 50px;
+  /*  Suppression puces liste ordonnée  */
+  /*  Rétablissement puce numérotées avec mise en forme  */
+}
+
+#fonc h2 {
+  margin-left: 6%;
+}
+
+#fonc ol {
+  width: 85%;
+  padding: 0;
+}
+
+#fonc li {
+  padding: 30px 10%;
+}
+
+#fonc .fas {
+  padding-left: 5%;
+}
+
+#fonc .fa-mobile-alt {
+  -webkit-transform: scale(1.55, 1.3);
+          transform: scale(1.55, 1.3);
+  margin-left: 3px;
+  margin-right: 2px;
+  padding-right: 10px;
+}
+
+#fonc .fa-list {
+  margin-right: 1px;
+  padding-right: 10px;
+}
+
+#fonc .fa-store {
+  padding-right: 10px;
+}
+
+#fonc ol {
+  margin: auto;
+  list-style: none;
+  counter-reset: li;
+}
+
+#fonc li::before {
+  content: counter(li);
+  color: #ffffff;
+  padding: 2px 0px 2px 6px;
+  background-color: #9356dc;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+  left: 7px;
+  z-index: 1;
+}
+
+#fonc li {
+  counter-increment: li;
+  padding: 25px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+#fonc li:hover {
+  background-color: #f2eafb;
+  -webkit-box-shadow: 0 3px 8px #c9abee;
+          box-shadow: 0 3px 8px #c9abee;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#fonc li:hover .icon_fonc {
+  color: #9356dc;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+footer {
+    background-color: #353535;
+    color: #fff;
+    line-height: 1.6rem;
+    padding: 18px;
+
+    a {
+        color: #fff;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-family: 'Shrikhand';
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin-bottom: 2px;
+    }
+
+    .fa-hands-helping {
+            font-size: 0.7rem;
+        }
+    
+    .fas {
+        display: inline-block;
+        margin-right: 10px;
+       
+    } 
+}

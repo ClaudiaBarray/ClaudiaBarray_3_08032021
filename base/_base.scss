@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+//font-size: 16px
+
+.logo {
+  font-family: 'Shrikhand', cursive;
+}
+//font-size: 32px
+
+a:visited, a:active, a:focus {
+  outline: none;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
