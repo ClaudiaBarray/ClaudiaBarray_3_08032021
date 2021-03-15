@@ -11,10 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-.logo {
-  font-family: 'Shrikhand', cursive;
-}
-
 a:visited, a:active, a:focus {
   outline: none;
 }
@@ -31,7 +27,7 @@ button:hover {
 /*  Bouton page Accueil  */
 .explore {
   width: 220px;
-  height: 50px;
+  height: 45px;
   font-family: "Roboto";
   font-size: 0.95em;
   color: #ffffff;
@@ -47,7 +43,7 @@ button:hover {
 /*  Bouton pages menu  */
 .command {
   width: 190px;
-  height: 50px;
+  height: 45px;
   font-family: "Roboto";
   font-size: 0.95em;
   color: #ffffff;
@@ -82,8 +78,9 @@ header {
 header h1 {
   margin: auto;
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   padding: 20px 0 10px 0;
+  font-weight: normal;
 }
 
 header a:visited {
@@ -99,6 +96,16 @@ header .fa-arrow-left {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #353535;
   color: #fff;
   line-height: 1.6rem;
@@ -109,60 +116,77 @@ footer a {
   color: #fff;
 }
 
-footer ul {
-  list-style-type: none;
-  padding-left: 0;
-  line-height: 30px;
-}
-
 footer h2 {
   font-family: 'Shrikhand';
   font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 2px;
+  margin-left: 15px;
 }
 
-footer .fa-hands-helping {
-  font-size: 0.7rem;
+footer ul {
+  list-style: none;
+  padding-left: 15px;
 }
 
-footer .fas {
-  display: inline-block;
-  margin-right: 10px;
+footer ul li {
+  padding-bottom: 5px;
+}
+
+footer ul li span {
+  padding-left: 5px;
+}
+
+footer ul li a {
+  color: #ffffff;
+}
+
+footer ul .fa-utensils {
+  font-size: 0.9rem;
+}
+
+footer ul .fa-hands-helping {
+  font-size: 0.6rem;
+}
+
+footer ul .lighter-link {
+  font-weight: normal;
 }
 
 form {
-  background-color: #f5f5f5;
   font-family: "Roboto";
   text-align: center;
-  width: 100%;
-  /*  CHAMP DE SAISIE  */
-  /*  ICONE LOCALISATION  */
 }
 
-form h1 {
+form .presentation {
+  background-color: #f6f6f6;
+  margin-top: -50px;
+}
+
+form .presentation h1 {
+  margin-top: 50px;
   font-family: "Roboto";
   font-size: 1.8em;
-  padding: 3% 14% 0 14%;
+  font-weight: 500;
+  padding: 7% 14% 0 14%;
 }
 
-form p {
-  margin: 1rem;
-  font-size: 1.2rem;
-  font-weight: lighter;
+form .presentation p {
+  font-size: 20px;
+  font-weight: 100;
 }
 
 form .search {
   width: 100%;
-  height: 50px;
+  height: 3em;
   color: #000000;
   text-align: center;
-  font-size: 0.9em;
-  font-weight: 600px;
-  background-color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #e5e5e5;
   border: none;
-  -webkit-box-shadow: inset 0 2px 3px #828282;
-          box-shadow: inset 0 2px 3px #828282;
+  -webkit-box-shadow: inset 0 1.1px 1px #9b9b9b;
+          box-shadow: inset 0 1.1px 1px #9b9b9b;
 }
 
 form .search::-webkit-input-placeholder {
@@ -183,12 +207,14 @@ form .search::placeholder {
 
 form .fa-map-marker-alt {
   color: #000000;
+  font-size: 20px;
   position: relative;
   z-index: 0;
-  right: 18%;
-  top: 33px;
+  right: 22%;
+  top: 40px;
 }
 
+/*fonctionnement*/
 #fonc {
   width: 100%;
   margin-top: 50px;
@@ -258,7 +284,7 @@ form .fa-map-marker-alt {
 #fonc li {
   counter-increment: li;
   padding: 25px;
-  background-color: #f5f5f5;
+  background-color: #f6f6f6;
   margin-bottom: 20px;
   border-radius: 15px;
   position: relative;
@@ -277,5 +303,235 @@ form .fa-map-marker-alt {
   color: #9356dc;
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 40px 0px 40px 0px;
+}
+
+.restaurants h2 {
+  width: 370px;
+  margin: 0px auto;
+  padding-bottom: 20px;
+}
+
+.restaurants__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 370px;
+  margin: auto;
+}
+
+.restaurants__container__card {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 3px 3px #e6e6e6;
+          box-shadow: 1px 3px 3px #e6e6e6;
+  border-radius: 17px;
+  overflow: hidden;
+  height: 270px;
+}
+
+.restaurants__container__card__img {
+  width: 100%;
+  position: absolute;
+}
+
+.restaurants__container__card__img__palette, .restaurants__container__card__img__francaise, .restaurants__container__card__img__delice {
+  top: -50px;
+}
+
+.restaurants__container__card__img__note {
+  top: -70px;
+}
+
+.restaurants__container__card__status {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: #2c9c81;
+  font-size: 0.9em;
+  padding: 0.4em 0.9em;
+  border-radius: 4px;
+}
+
+.restaurants__container__card__content {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.restaurants__container__card__content h3 {
+  color: black;
+  margin: 0px;
+  padding: 15px 0px 5px 10px;
+}
+
+.restaurants__container__card__content p {
+  color: black;
+  margin: 0px;
+  padding: 0px 0px 15px 10px;
+  font-weight: 300;
+}
+
+.restaurants__container__card__heart-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+.imageTop {
+  position: relative;
+  margin-bottom: -40px;
+  z-index: -1;
+  width: 100%;
+  max-height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listBase {
+  position: relative;
+  background: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  margin-top: -10px;
+  z-index: 2;
+  padding: 15px;
+  padding-bottom: 60px;
+}
+
+.listBase__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  padding-left: 20px;
+  padding-bottom: 0px;
+}
+
+.listBase .heart {
+  font-size: 1.1em;
+  padding-right: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.listBase h1 {
+  font-family: shrikhand, sans-serif;
+  font-size: 1.7em;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.listBase h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding-bottom: 0;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.listBase h2::after {
+  content: "";
+  display: block;
+  width: 45px;
+  border-bottom: solid 3px #99e2d0;
+  margin: 5px 0;
+}
+
+.cardDish {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 10px;
+  height: 78px;
+  margin: 20px 0;
+  line-height: 1.6;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px 3px #eeeeee;
+          box-shadow: 0 0 10px 3px #eeeeee;
+}
+
+.cardDish__coll {
+  width: 90%;
+  margin: 0;
+}
+
+.cardDish h3 {
+  font-size: 1.1em;
+  overflow: hidden;
+  font-weight: 500;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cardDish p {
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-top: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cardDish .prix {
+  position: relative;
+  top: 20px;
+  width: 10%;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.2;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btn-command {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

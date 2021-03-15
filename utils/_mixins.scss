@@ -1,7 +1,7 @@
 /*  BOUTONS  */
 @mixin button($width, $margin-bottom) {
     width: $width;
-    height: 50px;
+    height: 45px;
     font-family: $police-text;
     font-size: 0.95em;
     color: $secondary-font-color;
@@ -22,12 +22,4 @@
     transition: 750ms;
   }
 
-  @mixin anim-item {
-    &:hover {
-        background: lighten($color-primary, 37);
-
-        .fas {
-            color: $color-primary;
-        }
-      } 
-    }
+  

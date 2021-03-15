@@ -1,17 +1,15 @@
 footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: #353535;
     color: #fff;
     line-height: 1.6rem;
     padding: 18px;
+    
 
     a {
         color: #fff;
-    }
-
-    ul{
-        list-style-type: none;
-        padding-left: 0;
-        line-height: 30px;
     }
 
     h2 {
@@ -19,15 +17,36 @@ footer {
         font-size: 1.1rem;
         font-weight: normal;
         margin-bottom: 2px;
+        margin-left: 15px;
     }
 
-    .fa-hands-helping {
-            font-size: 0.7rem;
-        }
     
-    .fas {
-        display: inline-block;
-        margin-right: 10px;
+
+    ul {
+        list-style: none;
+        padding-left: 15px;
+        li {
+            padding-bottom: 5px;
+          
+            span {
+                padding-left: 5px;
+            }
+          
+            a {
+                color: $background-white;
+            }
+        }
+        .fa-utensils {
+            font-size: 0.9rem;
+        }
+        .fa-hands-helping {
+           font-size: 0.6rem;
+        }
+        .lighter-link {
+            font-weight: normal;
+        }
+    }
        
     } 
-}
+
+    
