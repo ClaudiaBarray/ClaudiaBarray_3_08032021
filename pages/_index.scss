@@ -66,30 +66,30 @@ form{
     & ol {
       width: 85%;
       padding: 0;
+      
     }
-    & li {
-      padding: 30px 10%;
-    }
+    
     & .fas {
       padding-left: 5%;
     }
     & .fa-mobile-alt {
       transform: scale(1.55, 1.3);
       margin-left: 3px;
-      margin-right: 2px;
-      padding-right: 10px;
+      margin-right: 30px;
+      padding-right: 20px;
     }
     & .fa-list {
-      margin-right: 1px;
+      margin-right: 30px;
       padding-right: 10px;
     }
     & .fa-store {
-      padding-right: 10px;
+      padding-right: 40px;
     }
     /*  Suppression puces liste ordonnée  */
     & ol {
       margin: auto;
       list-style: none;
+      
       counter-reset: li;
       
     }
@@ -133,6 +133,7 @@ form{
     background-color: $color-background;
     width: 100%;
     padding: 40px 0px 40px 0px;
+    margin-top: 60px;
     h2{
         width: 370px;
         margin: 0px auto;
