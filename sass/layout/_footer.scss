@@ -17,6 +17,10 @@ footer {
         font-weight: normal;
         margin-bottom: 2px;
         margin-left: 15px;
+        @include tablet{
+        display: flex;
+        justify-content: center;
+        }
     }
 
     ul {
@@ -32,6 +36,7 @@ footer {
             a {
                 color: $background-white;
             }
+            
         }
         .fa-utensils {
             font-size: 0.9rem;
@@ -42,9 +47,11 @@ footer {
         .lighter-link {
             font-weight: normal;
         }
+        @include tablet{
+            display: flex;
+            justify-content: space-around;
+            }
     }
-    @include tablet{
-        flex-direction:   center;
-    }
+    
 }
 
