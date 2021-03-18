@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*  Boutons  */
+/*Responsive*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -118,7 +119,7 @@ footer a {
 }
 
 footer h2 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 2px;
@@ -152,6 +153,15 @@ footer ul .fa-hands-helping {
 
 footer ul .lighter-link {
   font-weight: normal;
+}
+
+@media all and (min-width: 736px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
 }
 
 form {
@@ -227,6 +237,32 @@ form .fa-map-marker-alt {
   margin-left: 6%;
 }
 
+@media all and (min-width: 736px) {
+  #fonc h2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  #fonc h2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+  }
+}
+
 #fonc ol {
   width: 85%;
   padding: 0;
@@ -259,6 +295,31 @@ form .fa-map-marker-alt {
   counter-reset: li;
 }
 
+@media all and (min-width: 736px) {
+  #fonc ol {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  #fonc ol {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 #fonc li::before {
   content: counter(li);
   color: #ffffff;
@@ -284,8 +345,34 @@ form .fa-map-marker-alt {
   background-color: #f6f6f6;
   margin-bottom: 20px;
   border-radius: 15px;
+  -webkit-box-shadow: 0 1px 6px #cecece;
+          box-shadow: 0 1px 6px #cecece;
   position: relative;
   z-index: 1;
+}
+
+@media all and (min-width: 736px) {
+  #fonc li {
+    width: 25%;
+    font-size: 1em;
+    padding: 20px 30px 20px 10px;
+    margin: 30px 2% 30px 2%;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 1px 6px #cecece;
+            box-shadow: 0 1px 6px #cecece;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  #fonc li {
+    width: 25%;
+    font-size: 1.05em;
+    padding: 20px 0 20px 60px;
+    margin: 30px 2% 30px 2%;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 1px 6px #cecece;
+            box-shadow: 0 1px 6px #cecece;
+  }
 }
 
 #fonc li:hover {
@@ -315,6 +402,12 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
+@media all and (min-width: 736px) {
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+
 .restaurants__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,6 +420,28 @@ form .fa-map-marker-alt {
   margin: auto;
 }
 
+@media all and (min-width: 736px) {
+  .restaurants__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 760px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .restaurants__container {
+    max-width: 1064px;
+    width: 860px;
+  }
+}
+
 .restaurants__container__card {
   display: block;
   position: relative;
@@ -336,6 +451,22 @@ form .fa-map-marker-alt {
   border-radius: 17px;
   overflow: hidden;
   height: 270px;
+}
+
+@media all and (min-width: 736px) {
+  .restaurants__container__card {
+    -webkit-box-flex: 35%;
+        -ms-flex: 35%;
+            flex: 35%;
+    margin: 20px;
+    height: 250px;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .restaurants__container__card {
+    margin: 10px;
+  }
 }
 
 .restaurants__container__card__img {

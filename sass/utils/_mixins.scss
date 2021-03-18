@@ -22,4 +22,29 @@
     transition: 750ms;
   }
 
+  /*Responsive*/
+
+  @mixin small-mobile{
+    @media all and (max-width:320px){
+      @content;
+    }
+  }
+
+  @mixin tablet {
+    @media all and (min-width: 736px){
+      @content;
+    }
+  }
+
+  @mixin tablet-horizontal {
+    @media all and (min-width: 1024px){
+      @content;
+    }
+  }
+
+  @mixin desktop{
+    @media all and (min-width:1300px){
+      @content;
+    }
+  }
   

@@ -1,48 +1,40 @@
-
-
-form{
+form {
   font-family: $police-text;
   text-align: center;
-  
 
-  & .presentation{
+  & .presentation {
     background-color: $color-background;
     margin-top: -50px;
 
-  & h1 {
-    margin-top: 50px;
-    font-family: $police-text;
-    font-size: 1.8em;
-    font-weight: 500;
-    padding: 7% 14% 0 14%;
-    
+    & h1 {
+      margin-top: 50px;
+      font-family: $police-text;
+      font-size: 1.8em;
+      font-weight: 500;
+      padding: 7% 14% 0 14%;
+    }
+    & p {
+      font-size: 20px;
+      font-weight: 100;
+    }
   }
-  & p{
-    font-size: 20px;
-    font-weight: 100;
-    
-    
-  }
-}
 
- 
   & .search {
     width: 100%;
     height: 3em;
     color: $primary-font-color;
     text-align: center;
     font-size: 20px;
-    font-weight:400;
+    font-weight: 400;
     background-color: lighten($color: $shadow, $amount: 7);
     border: none;
-    box-shadow: inset 0 2.5px 0 lighten($color: #000000, $amount: 85) ;
-   
-    
+    box-shadow: inset 0 2.5px 0 lighten($color: #000000, $amount: 85);
+
     &::placeholder {
       color: $primary-font-color;
     }
   }
-  
+
   & .fa-map-marker-alt {
     color: $primary-font-color;
     font-size: 20px;
@@ -50,157 +42,224 @@ form{
     z-index: 0;
     right: 22%;
     top: 40px;
-    
   }
 }
-
 
 /*fonctionnement*/
 
 #fonc {
-    width: 100%;
-    margin-top: 50px;
-    & h2 {
-      margin-left: 6%;
+  width: 100%;
+  margin-top: 50px;
+
+  & h2 {
+    margin-left: 6%;
+    @include tablet {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
     }
-    & ol {
-      width: 85%;
-      padding: 0;
-      
+    @include desktop {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+    }
+  }
+  & ol {
+    width: 85%;
+    padding: 0;
+  }
+
+  & .fas {
+    padding-left: 5%;
+  }
+  & .fa-mobile-alt {
+    transform: scale(1.55, 1.3);
+    margin-left: 3px;
+    margin-right: 10px;
+    padding-right: 30px;
+  }
+  & .fa-list {
+    margin-right: 30px;
+    padding-right: 10px;
+  }
+  & .fa-store {
+    padding-right: 30px;
+  }
+  /*  Suppression puces liste ordonnée  */
+  & ol {
+    margin: auto;
+    list-style: none;
+    counter-reset: li;
+    @include tablet {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
     }
     
-    & .fas {
-      padding-left: 5%;
+  }
+
+  /*  Rétablissement puce numérotées avec mise en forme  */
+  & li::before {
+    content: counter(li);
+    color: $secondary-font-color;
+    padding: 2px 0px 2px 6px;
+    background-color: $color-primary;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 7px;
+    z-index: 1;
+    
+    
+  }
+  & li {
+    counter-increment: li;
+    padding: 25px;
+    background-color: $color-background;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 1px 6px lighten($color: $footer, $amount: 60 );
+    position: relative;
+    z-index: 1;
+    @include tablet {
+      width: 25%;
+      font-size: 1em;
+      padding: 20px 30px 20px 10px;
+      margin: 30px 2% 30px 2%;
+      white-space: nowrap;
+      box-shadow: 0 1px 6px lighten($color: $footer, $amount: 60);
     }
-    & .fa-mobile-alt {
-      transform: scale(1.55, 1.3);
-      margin-left: 3px;
-      margin-right: 10px;
-      padding-right: 30px;
+    @include desktop {
+      width: 25%;
+      font-size: 1.05em;
+      padding: 20px 0 20px 60px;
+      margin: 30px 2% 30px 2%;
+      white-space: nowrap;
+      box-shadow: 0 1px 6px lighten($color: $footer, $amount: 60);
     }
-    & .fa-list {
-      margin-right: 30px;
-      padding-right: 10px;
-    }
-    & .fa-store {
-      padding-right: 30px;
-    }
-    /*  Suppression puces liste ordonnée  */
-    & ol {
-      margin: auto;
-      list-style: none;
-      
-      counter-reset: li;
-      
-    }
-    /*  Rétablissement puce numérotées avec mise en forme  */
-    & li::before {
-      content: counter(li);
-      color: $secondary-font-color;
-      padding: 2px 0px 2px 6px;
-      background-color: $color-primary;
-      border-radius: 12px;
-      display: flex;
-      justify-content:space-between;
-      width: 1em;
-      margin-left: -1em;
-      position: absolute;
-      left: 7px;
-      z-index: 1;
-    }
-    & li {
-      counter-increment: li;
-      padding: 25px;
-      background-color: $color-background;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      position: relative;
-      z-index: 1;
-      
-      
-    }
-    & li:hover {
-      background-color: lighten($color: $color-primary, $amount: 35);
-      box-shadow: 0 3px 8px lighten($color: $color-primary, $amount: 20);
+  }
+  & li:hover {
+    background-color: lighten($color: $color-primary, $amount: 35);
+    box-shadow: 0 3px 8px lighten($color: $color-primary, $amount: 20);
+    transition: 300ms;
+    & .icon_fonc {
+      color: $color-primary;
       transition: 300ms;
-      & .icon_fonc {
-        color: $color-primary;
-        transition: 300ms;
+    }
+  }
+}
+.restaurants {
+  background-color: $color-background;
+  width: 100%;
+  padding: 40px 0px 40px 0px;
+  margin-top: 60px;
+  h2 {
+    width: 370px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    @include tablet{
+      text-align: center;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin: auto;
+    @include tablet{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 760px;
+      
+    }
+    @include desktop{
+      max-width: 1064px;
+      width: 860px;
+    }
+    
+
+    &__card {
+      display: block;
+      position: relative;
+      margin-bottom: 20px;
+      box-shadow: 1px 3px 3px lighten($primary-font-color, 90%);
+      border-radius: 17px;
+      overflow: hidden;
+      height: 270px;
+      
+      @include tablet{
+        flex:35%;
+        margin:20px;
+        height: 250px;
+        
+        
+      }
+      @include desktop{
+        margin: 10px;
+      }
+
+      &__img {
+        width: 100%;
+        position: absolute;
+        &__palette,
+        &__francaise,
+        &__delice {
+          top: 1px;
+        
+          
+        }
+        &__note {
+          top: -10px;
+
+        }
+      }
+      &__status {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 35%);
+        font-size: 0.9em;
+        padding: 0.4em 0.9em;
+        border-radius: 4px;
+      }
+      &__content {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        h3 {
+          color: black;
+          margin: 0px;
+          padding: 15px 0px 5px 10px;
+        }
+        p {
+          color: black;
+          margin: 0px;
+          padding: 0px 0px 15px 10px;
+          font-weight: 300;
+        }
+      }
+      &__heart-btn {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
       }
     }
   }
-  .restaurants {
-    background-color: $color-background;
-    width: 100%;
-    padding: 40px 0px 40px 0px;
-    margin-top: 60px;
-    h2{
-        width: 370px;
-        margin: 0px auto;
-        padding-bottom: 20px;
-        
-    }
-    &__container {
-        display: flex;
-        flex-direction: column;
-        width: 370px;
-        margin: auto;
-        
-        &__card {
-            display: block;
-            position: relative;
-            margin-bottom: 20px;
-            box-shadow: 1px 3px 3px lighten($primary-font-color, 90%);
-            border-radius: 17px;
-            overflow: hidden;
-            height: 270px;
-            
-            &__img {
-                width: 100%;
-                position: absolute;
-                &__palette, &__francaise, &__delice {
-                    top: 1px;
-                }
-               &__note{
-                 top:-10px;
-               } 
-            }
-            &__status {
-                position: absolute;
-                top: 5px;
-                right: 15px;
-                background-color: $color-tertiary;
-                color: darken($color-tertiary, 35%);
-                font-size: 0.9em;
-                padding: 0.4em 0.9em;
-                border-radius: 4px;
-            }
-            &__content {
-                background-color: white;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                position: absolute;
-                bottom: 0px;
-                width: 100%;
-                h3 {
-                    color: black;
-                    margin: 0px;
-                    padding: 15px 0px 5px 10px;
-                }
-                p {
-                    color: black;
-                    margin: 0px;
-                    padding: 0px 0px 15px 10px;
-                    font-weight: 300;
-                }
-            }
-            &__heart-btn {
-                position: absolute;
-                right: 25px;
-                bottom: 25px;
-            }
-        }
-    }
 }
- 
