@@ -344,11 +344,11 @@ form .fa-map-marker-alt {
 }
 
 .restaurants__container__card__img__palette, .restaurants__container__card__img__francaise, .restaurants__container__card__img__delice {
-  top: -50px;
+  top: 1px;
 }
 
 .restaurants__container__card__img__note {
-  top: -165px;
+  top: -10px;
 }
 
 .restaurants__container__card__status {
