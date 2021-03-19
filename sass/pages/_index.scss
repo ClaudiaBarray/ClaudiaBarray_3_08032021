@@ -178,15 +178,12 @@ form {
     width: 370px;
     margin: auto;
     @include tablet{
-      flex-direction: row;
+      flex-direction:row;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 760px;
-      
-    }
-    @include desktop{
-      max-width: 1064px;
+      margin: auto;
       width: 860px;
+      
     }
     
 
@@ -201,13 +198,15 @@ form {
       
       @include tablet{
         flex:35%;
-        margin:20px;
+        margin:30px;
         height: 250px;
+        width: 400px;
         
         
       }
       @include desktop{
-        margin: 10px;
+        margin: 40px;
+       
       }
 
       &__img {
