@@ -37,8 +37,8 @@ button:hover {
   border-radius: 25px;
   -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
           box-shadow: 0px 3px 4px 2px #d3d3d3;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#e4b0d5));
-  background: linear-gradient(0, #9356dc, #e4b0d5);
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
+  background: linear-gradient(0, #9356dc, #ff79da);
 }
 
 /*  Bouton pages menu  */
@@ -53,18 +53,85 @@ button:hover {
   border-radius: 25px;
   -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
           box-shadow: 0px 3px 4px 2px #d3d3d3;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#e4b0d5));
-  background: linear-gradient(0, #9356dc, #e4b0d5);
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
+  background: linear-gradient(0, #9356dc, #ff79da);
 }
 
 .command:hover,
 .explore:hover {
   -webkit-box-shadow: 0px 3px 4px 2px #6d6d6d;
           box-shadow: 0px 3px 4px 2px #6d6d6d;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#a16be0), to(#eac3df));
-  background: linear-gradient(0, #a16be0, #eac3df);
+  background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#a16be0), to(#ff93e1));
+  background: linear-gradient(0, #a16be0, #ff93e1);
   -webkit-transition: 750ms;
   transition: 750ms;
+}
+
+.heart-button {
+  position: relative;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.heart-button:hover, .heart-button:active {
+  outline: none;
+}
+
+.heart-button:hover .far, .heart-button:active .far {
+  background: linear-gradient(60deg, #ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heart-button:hover .fas, .heart-button:active .fas {
+  -webkit-animation: heartfilling 700ms ease-in-out forwards;
+          animation: heartfilling 700ms ease-in-out forwards;
+}
+
+.heart-button .far {
+  font-size: 30px;
+  color: grey;
+}
+
+.heart-button .fas {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(60deg, #ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes heartfilling {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartfilling {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .spinner {
@@ -113,7 +180,7 @@ button:hover {
   content: "";
   position: absolute;
   border: 6px solid transparent;
-  border-top-color: #e4b0d5;
+  border-top-color: #ff79da;
   border-radius: 50%;
   top: 43px;
   left: 43px;
@@ -129,7 +196,7 @@ button:hover {
   height: 100%;
   z-index: 1000;
   top: 0;
-  background: #d3d3d3;
+  background: radial-gradient(circle at bottom, #d2a8eb 0%, #8408aa 100%);
 }
 
 .place-left {
@@ -299,7 +366,7 @@ footer h2 {
   margin-left: 15px;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   footer h2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -339,7 +406,7 @@ footer ul .lighter-link {
   font-weight: normal;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -422,7 +489,7 @@ form .fa-map-marker-alt {
   margin-left: 6%;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -435,7 +502,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1240px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -480,7 +547,7 @@ form .fa-map-marker-alt {
   counter-reset: li;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -494,7 +561,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1240px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -536,7 +603,7 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   #fonc li {
     width: 25%;
     font-size: 1em;
@@ -548,7 +615,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1240px) {
   #fonc li {
     width: 25%;
     font-size: 1.05em;
@@ -587,7 +654,7 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .restaurants h2 {
     text-align: center;
   }
@@ -605,7 +672,7 @@ form .fa-map-marker-alt {
   margin: auto;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .restaurants__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -632,7 +699,7 @@ form .fa-map-marker-alt {
   height: 270px;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .restaurants__container__card {
     -webkit-box-flex: 35%;
         -ms-flex: 35%;
@@ -643,7 +710,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1240px) {
   .restaurants__container__card {
     margin: 40px;
   }
@@ -710,7 +777,7 @@ form .fa-map-marker-alt {
 
 .imageTop {
   position: relative;
-  margin-bottom: -40px;
+  margin-bottom: -50px;
   z-index: -1;
   width: 100%;
   max-height: 800px;
@@ -718,7 +785,7 @@ form .fa-map-marker-alt {
      object-fit: cover;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .imageTop {
     -o-object-fit: cover;
        object-fit: cover;
@@ -729,7 +796,7 @@ form .fa-map-marker-alt {
   position: relative;
   background: #f6f6f6;
   border-radius: 50px 50px 0 0;
-  margin-top: -10px;
+  margin-top: -5px;
   z-index: 2;
   padding: 15px;
   padding-bottom: 60px;
@@ -747,25 +814,36 @@ form .fa-map-marker-alt {
   padding-bottom: 0px;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .listBase__title {
     width: 500px;
     margin: auto;
   }
 }
 
-.listBase .heart {
-  font-size: 1.1em;
-  padding-right: 30px;
-  margin-right: 10px;
-  margin-top: 10px;
+.listBase__title__heart {
+  position: absolute;
+  right: 50px;
+  top: 55px;
 }
 
-.listBase h1 {
+@media all and (min-width: 800px) {
+  .listBase__title__heart {
+    margin-right: 220px;
+  }
+}
+
+@media all and (min-width: 800px) and (min-width: 1240px) {
+  .listBase__title__heart {
+    margin-right: 350px;
+  }
+}
+
+.listBase__title h1 {
   font-family: shrikhand, sans-serif;
   font-size: 1.7em;
   font-weight: normal;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .listBase h2 {
@@ -773,11 +851,12 @@ form .fa-map-marker-alt {
   font-weight: 300;
   font-size: 1.1em;
   padding-bottom: 0;
+  padding-top: 22px;
   padding-left: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .listBase h2 {
     max-width: 500px;
     margin-left: auto;
@@ -811,11 +890,11 @@ form .fa-map-marker-alt {
   line-height: 1.6;
   background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 10px 3px #ececec;
-          box-shadow: 0 0 10px 3px #ececec;
+  -webkit-box-shadow: 1px 0 15px 2px #e8e8e8;
+          box-shadow: 1px 0 15px 2px #e8e8e8;
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 800px) {
   .cardDish {
     max-width: 500px;
     margin: 20px auto;
@@ -836,8 +915,8 @@ form .fa-map-marker-alt {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cardDish p {
@@ -848,8 +927,8 @@ form .fa-map-marker-alt {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cardDish .prix {
@@ -859,8 +938,6 @@ form .fa-map-marker-alt {
   font-size: 1em;
   text-align: center;
   line-height: 1.2;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .btn-command {
