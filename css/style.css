@@ -821,6 +821,24 @@ form .fa-map-marker-alt {
   }
 }
 
+.listBase__title__heart {
+  position: absolute;
+  right: 50px;
+  top: 55px;
+}
+
+@media all and (min-width: 1024px) {
+  .listBase__title__heart {
+    margin-right: 220px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1280px) {
+  .listBase__title__heart {
+    margin-right: 350px;
+  }
+}
+
 .listBase__title h1 {
   font-family: shrikhand, sans-serif;
   font-size: 1.7em;
@@ -852,24 +870,6 @@ form .fa-map-marker-alt {
   width: 45px;
   border-bottom: solid 3px #99e2d0;
   margin: 5px 0;
-}
-
-.listBase__heart-btn {
-  position: relative;
-  right: 50px;
-  top: 55px;
-}
-
-@media all and (min-width: 1024px) {
-  .listBase__heart-btn {
-    margin-right: 220px;
-  }
-}
-
-@media all and (min-width: 1024px) and (min-width: 1280px) {
-  .listBase__heart-btn {
-    margin-right: 350px;
-  }
 }
 
 .cardDish {
