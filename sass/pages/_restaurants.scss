@@ -30,19 +30,8 @@
             width: 500px;
             margin: auto;
         }
-
-        &__heart {
-            position: absolute;
-            right: 50px;
-            top: 55px;
-            @include tablet {
-                margin-right:220px;
-                @include desktop{
-                    margin-right:350px; 
-                }
-                
-            }
-        }
+        
+        
 
         h1 {
             font-family: shrikhand, sans-serif;
@@ -73,6 +62,19 @@
         border-bottom: solid 3px $color-tertiary;
         margin: 5px 0;
     }
+    &__heart-btn {
+        position: relative;
+        right: 50px;
+        top: 55px;
+        @include tablet {
+            margin-right:220px;
+            @include desktop{
+                margin-right:350px; 
+            }
+            
+        }
+    }
+
 }
 .cardDish {
     box-sizing: border-box;

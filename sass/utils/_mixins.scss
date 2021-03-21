@@ -26,7 +26,7 @@
   
 
   @mixin tablet {
-    @media all and (min-width: 800px){
+    @media all and (min-width: 1024px){
       @content;
     }
   }
@@ -34,7 +34,7 @@
   
 
   @mixin desktop{
-    @media all and (min-width:1240px){
+    @media all and (min-width:1280px){
       @content;
     }
   }

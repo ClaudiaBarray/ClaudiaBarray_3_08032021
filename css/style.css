@@ -366,7 +366,7 @@ footer h2 {
   margin-left: 15px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   footer h2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,7 +406,7 @@ footer ul .lighter-link {
   font-weight: normal;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,7 +489,7 @@ form .fa-map-marker-alt {
   margin-left: 6%;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -502,7 +502,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1280px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -547,7 +547,7 @@ form .fa-map-marker-alt {
   counter-reset: li;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -561,7 +561,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1280px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -603,7 +603,7 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   #fonc li {
     width: 25%;
     font-size: 1em;
@@ -615,7 +615,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1280px) {
   #fonc li {
     width: 25%;
     font-size: 1.05em;
@@ -654,7 +654,7 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .restaurants h2 {
     text-align: center;
   }
@@ -672,7 +672,7 @@ form .fa-map-marker-alt {
   margin: auto;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .restaurants__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -699,7 +699,7 @@ form .fa-map-marker-alt {
   height: 270px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .restaurants__container__card {
     -webkit-box-flex: 35%;
         -ms-flex: 35%;
@@ -710,7 +710,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1240px) {
+@media all and (min-width: 1280px) {
   .restaurants__container__card {
     margin: 40px;
   }
@@ -785,7 +785,7 @@ form .fa-map-marker-alt {
      object-fit: cover;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .imageTop {
     -o-object-fit: cover;
        object-fit: cover;
@@ -814,28 +814,10 @@ form .fa-map-marker-alt {
   padding-bottom: 0px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .listBase__title {
     width: 500px;
     margin: auto;
-  }
-}
-
-.listBase__title__heart {
-  position: absolute;
-  right: 50px;
-  top: 55px;
-}
-
-@media all and (min-width: 800px) {
-  .listBase__title__heart {
-    margin-right: 220px;
-  }
-}
-
-@media all and (min-width: 800px) and (min-width: 1240px) {
-  .listBase__title__heart {
-    margin-right: 350px;
   }
 }
 
@@ -856,7 +838,7 @@ form .fa-map-marker-alt {
   margin-top: 10px;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .listBase h2 {
     max-width: 500px;
     margin-left: auto;
@@ -870,6 +852,24 @@ form .fa-map-marker-alt {
   width: 45px;
   border-bottom: solid 3px #99e2d0;
   margin: 5px 0;
+}
+
+.listBase__heart-btn {
+  position: relative;
+  right: 50px;
+  top: 55px;
+}
+
+@media all and (min-width: 1024px) {
+  .listBase__heart-btn {
+    margin-right: 220px;
+  }
+}
+
+@media all and (min-width: 1024px) and (min-width: 1280px) {
+  .listBase__heart-btn {
+    margin-right: 350px;
+  }
 }
 
 .cardDish {
@@ -894,7 +894,7 @@ form .fa-map-marker-alt {
           box-shadow: 1px 0 15px 2px #e8e8e8;
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1024px) {
   .cardDish {
     max-width: 500px;
     margin: 20px auto;
