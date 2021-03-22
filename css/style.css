@@ -829,13 +829,13 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 1025px) {
   .listBase__title__heart {
-    margin-right: 330px;
+    margin-right: 380px;
   }
 }
 
 @media all and (min-width: 1380px) {
   .listBase__title__heart {
-    margin-right: 440px;
+    margin-right: 420px;
   }
 }
 
