@@ -366,7 +366,7 @@ footer h2 {
   margin-left: 15px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   footer h2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,7 +406,7 @@ footer ul .lighter-link {
   font-weight: normal;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,7 +489,7 @@ form .fa-map-marker-alt {
   margin-left: 6%;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -502,7 +502,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1025px) {
   #fonc h2 {
     width: 100%;
     display: -webkit-box;
@@ -547,7 +547,7 @@ form .fa-map-marker-alt {
   counter-reset: li;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -561,7 +561,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1025px) {
   #fonc ol {
     width: 100%;
     display: -webkit-box;
@@ -603,7 +603,7 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   #fonc li {
     width: 25%;
     font-size: 1em;
@@ -615,7 +615,7 @@ form .fa-map-marker-alt {
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1025px) {
   #fonc li {
     width: 25%;
     font-size: 1.05em;
@@ -654,7 +654,7 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .restaurants h2 {
     text-align: center;
   }
@@ -672,7 +672,7 @@ form .fa-map-marker-alt {
   margin: auto;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .restaurants__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -699,7 +699,7 @@ form .fa-map-marker-alt {
   height: 270px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .restaurants__container__card {
     -webkit-box-flex: 35%;
         -ms-flex: 35%;
@@ -707,12 +707,6 @@ form .fa-map-marker-alt {
     margin: 30px;
     height: 250px;
     width: 400px;
-  }
-}
-
-@media all and (min-width: 1280px) {
-  .restaurants__container__card {
-    margin: 40px;
   }
 }
 
@@ -785,7 +779,7 @@ form .fa-map-marker-alt {
      object-fit: cover;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .imageTop {
     -o-object-fit: cover;
        object-fit: cover;
@@ -814,7 +808,7 @@ form .fa-map-marker-alt {
   padding-bottom: 0px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .listBase__title {
     width: 500px;
     margin: auto;
@@ -827,15 +821,21 @@ form .fa-map-marker-alt {
   top: 55px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .listBase__title__heart {
     margin-right: 210px;
   }
 }
 
-@media all and (min-width: 1024px) and (min-width: 1280px) {
+@media all and (min-width: 1025px) {
   .listBase__title__heart {
-    margin-right: 350px;
+    margin-right: 330px;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .listBase__title__heart {
+    margin-right: 440px;
   }
 }
 
@@ -856,7 +856,7 @@ form .fa-map-marker-alt {
   margin-top: 10px;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .listBase h2 {
     max-width: 500px;
     margin-left: auto;
@@ -894,7 +894,7 @@ form .fa-map-marker-alt {
           box-shadow: 1px 0 15px 2px #e8e8e8;
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 768px) {
   .cardDish {
     max-width: 500px;
     margin: 20px auto;
