@@ -200,9 +200,7 @@ form {
         flex:35%;
         margin:30px;
         height: 250px;
-        width: 400px;
-        
-        
+        width: 400px;  
       }
       
 
@@ -212,13 +210,10 @@ form {
         &__palette,
         &__francaise,
         &__delice {
-          top: 1px;
-        
-          
+          top: 1px;  
         }
         &__note {
           top: -10px;
-
         }
       }
       &__status {

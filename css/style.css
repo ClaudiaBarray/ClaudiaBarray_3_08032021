@@ -141,16 +141,16 @@ button:hover {
   z-index: 1001;
   width: 100%;
   height: 100%;
-  -webkit-animation: hide-section 0.01s 2.4s forwards;
-          animation: hide-section 0.01s 2.4s forwards;
+  -webkit-animation: hide-section 0.01s 2.2s forwards;
+          animation: hide-section 0.01s 2.2s forwards;
 }
 
 .spinner__cercle {
-  border: 6px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #9356dc;
   margin: 0 auto;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -165,13 +165,13 @@ button:hover {
 .spinner__cercle::before {
   content: "";
   position: absolute;
-  border: 6px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #99e2d0;
   border-radius: 50%;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   -webkit-animation: loader 2.5s linear 0s infinite;
           animation: loader 2.5s linear 0s infinite;
 }
@@ -179,36 +179,25 @@ button:hover {
 .spinner__cercle::after {
   content: "";
   position: absolute;
-  border: 6px solid transparent;
+  border: 8px solid transparent;
   border-top-color: #ff79da;
   border-radius: 50%;
-  top: 43px;
-  left: 43px;
-  right: 43px;
-  bottom: 43px;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
   -webkit-animation: antiloader 0.3s linear 0s infinite;
           animation: antiloader 0.3s linear 0s infinite;
 }
 
 .spinner__place {
   position: absolute;
-  width: 50.5%;
+  width: 100%;
   height: 100%;
   z-index: 1000;
   top: 0;
   background: radial-gradient(circle at bottom, #d2a8eb 0%, #8408aa 100%);
-}
-
-.place-left {
-  left: 0;
-  -webkit-animation: move-section-left 0.4s ease-in-out 2s forwards;
-          animation: move-section-left 0.4s ease-in-out 2s forwards;
-}
-
-.place-right {
-  right: 0;
-  -webkit-animation: move-section-right 0.4s ease-in-out 2s forwards, hide-section 0.1s 2.4s forwards;
-          animation: move-section-right 0.4s ease-in-out 2s forwards, hide-section 0.1s 2.4s forwards;
+  opacity: 0.9;
 }
 
 @-webkit-keyframes loader {
@@ -244,36 +233,6 @@ button:hover {
   to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
-  }
-}
-
-@-webkit-keyframes move-section-left {
-  to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
-  }
-}
-
-@keyframes move-section-left {
-  to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
-  }
-}
-
-@-webkit-keyframes move-section-right {
-  to {
-    -webkit-transform: translateX(101%);
-            transform: translateX(101%);
-    opacity: 0;
-  }
-}
-
-@keyframes move-section-right {
-  to {
-    -webkit-transform: translateX(101%);
-            transform: translateX(101%);
-    opacity: 0;
   }
 }
 
