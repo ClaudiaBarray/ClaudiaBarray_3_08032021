@@ -82,7 +82,7 @@ button:hover {
   background: linear-gradient(60deg, #ff79da, #9356dc);
   background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .heart-button:hover .fas, .heart-button:active .fas {
@@ -105,7 +105,7 @@ button:hover {
   background: linear-gradient(60deg, #ff79da, #9356dc);
   background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transform-origin: bottom;
@@ -197,7 +197,7 @@ button:hover {
   z-index: 1000;
   top: 0;
   background: radial-gradient(circle at bottom, #d2a8eb 0%, #8408aa 100%);
-  opacity: 0.9;
+  opacity: 1;
 }
 
 @-webkit-keyframes loader {
@@ -776,7 +776,7 @@ form .fa-map-marker-alt {
 
 .listBase__title__heart {
   position: absolute;
-  right: 50px;
+  right: 38px;
   top: 55px;
 }
 
