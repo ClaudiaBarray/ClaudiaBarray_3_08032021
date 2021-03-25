@@ -35,8 +35,8 @@ button:hover {
   margin-bottom: 60px;
   border: 0;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
-          box-shadow: 0px 3px 4px 2px #d3d3d3;
+  -webkit-box-shadow: 0px 3px 4px 2px #d1d1d1;
+          box-shadow: 0px 3px 4px 2px #d1d1d1;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
   background: linear-gradient(0, #9356dc, #ff79da);
 }
@@ -51,16 +51,16 @@ button:hover {
   margin-bottom: 30px;
   border: 0;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 3px 4px 2px #d3d3d3;
-          box-shadow: 0px 3px 4px 2px #d3d3d3;
+  -webkit-box-shadow: 0px 3px 4px 2px #d1d1d1;
+          box-shadow: 0px 3px 4px 2px #d1d1d1;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#9356dc), to(#ff79da));
   background: linear-gradient(0, #9356dc, #ff79da);
 }
 
 .command:hover,
 .explore:hover {
-  -webkit-box-shadow: 0px 3px 4px 2px #6d6d6d;
-          box-shadow: 0px 3px 4px 2px #6d6d6d;
+  -webkit-box-shadow: 0px 3px 4px 2px #6b6b6b;
+          box-shadow: 0px 3px 4px 2px #6b6b6b;
   background: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#a16be0), to(#ff93e1));
   background: linear-gradient(0, #a16be0, #ff93e1);
   -webkit-transition: 750ms;
@@ -291,7 +291,7 @@ header .fa-arrow-left {
   position: absolute;
   z-index: 0;
   text-align: left;
-  color: black;
+  color: #000000;
   top: 30px;
   left: 12%;
 }
@@ -308,7 +308,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #353535;
-  color: #fff;
+  color: #ffffff;
   line-height: 1.6rem;
   padding: 18px;
 }
@@ -405,10 +405,10 @@ form .search {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  background-color: #e5e5e5;
+  background-color: #e3e3e3;
   border: none;
-  -webkit-box-shadow: inset 0 2.5px 0 #d9d9d9;
-          box-shadow: inset 0 2.5px 0 #d9d9d9;
+  -webkit-box-shadow: inset 0 2.2px 0 #cecece;
+          box-shadow: inset 0 2.2px 0 #cecece;
 }
 
 form .search::-webkit-input-placeholder {
@@ -559,12 +559,11 @@ form .fa-map-marker-alt {
   -webkit-box-shadow: 0 1px 6px #cecece;
           box-shadow: 0 1px 6px #cecece;
   position: relative;
-  z-index: 1;
 }
 
 @media all and (min-width: 768px) {
   #fonc li {
-    width: 25%;
+    width: 38%;
     font-size: 1em;
     padding: 20px 30px 20px 10px;
     margin: 30px 2% 30px 2%;
@@ -576,7 +575,7 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 1025px) {
   #fonc li {
-    width: 25%;
+    width: 40%;
     font-size: 1.05em;
     padding: 20px 0 20px 60px;
     margin: 30px 2% 30px 2%;
@@ -648,7 +647,6 @@ form .fa-map-marker-alt {
 }
 
 .restaurants__container__card {
-  display: block;
   position: relative;
   margin-bottom: 20px;
   -webkit-box-shadow: 1px 3px 3px #e6e6e6;
@@ -666,6 +664,7 @@ form .fa-map-marker-alt {
     margin: 30px;
     height: 250px;
     width: 400px;
+    margin-right: 50px;
   }
 }
 
@@ -689,12 +688,12 @@ form .fa-map-marker-alt {
   background-color: #99e2d0;
   color: #2c9c81;
   font-size: 0.9em;
-  padding: 0.4em 0.9em;
-  border-radius: 4px;
+  padding: 6px 15px;
+  border-radius: 2px;
 }
 
 .restaurants__container__card__content {
-  background-color: white;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,13 +709,13 @@ form .fa-map-marker-alt {
 }
 
 .restaurants__container__card__content h3 {
-  color: black;
+  color: #000000;
   margin: 0px;
   padding: 15px 0px 5px 10px;
 }
 
 .restaurants__container__card__content p {
-  color: black;
+  color: #000000;
   margin: 0px;
   padding: 0px 0px 15px 10px;
   font-weight: 300;
@@ -750,7 +749,7 @@ form .fa-map-marker-alt {
   background: #f6f6f6;
   border-radius: 50px 50px 0 0;
   margin-top: -5px;
-  z-index: 2;
+  z-index: 1;
   padding: 15px;
   padding-bottom: 60px;
 }
@@ -780,6 +779,12 @@ form .fa-map-marker-alt {
   top: 55px;
 }
 
+@media all and (min-width: 360px) {
+  .listBase__title__heart {
+    margin-right: -12px;
+  }
+}
+
 @media all and (min-width: 768px) {
   .listBase__title__heart {
     margin-right: 210px;
@@ -799,10 +804,10 @@ form .fa-map-marker-alt {
 }
 
 .listBase__title h1 {
-  font-family: shrikhand, sans-serif;
+  font-family: "Shrikhand", sans-serif;
   font-size: 1.7em;
   font-weight: normal;
-  padding-left: 5px;
+  padding-left: 1px;
 }
 
 .listBase h2 {
@@ -847,7 +852,7 @@ form .fa-map-marker-alt {
   height: 78px;
   margin: 20px 0;
   line-height: 1.6;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
   -webkit-box-shadow: 1px 0 15px 2px #e8e8e8;
           box-shadow: 1px 0 15px 2px #e8e8e8;
@@ -867,10 +872,11 @@ form .fa-map-marker-alt {
 
 .cardDish h3 {
   font-size: 1.1em;
-  overflow: hidden;
   font-weight: 500;
+  color: #000000;
   margin-top: 2px;
   margin-bottom: 1px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
@@ -879,24 +885,197 @@ form .fa-map-marker-alt {
 }
 
 .cardDish p {
-  width: 100%;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 300;
+  color: #000000;
   margin-top: 1px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .cardDish .prix {
-  position: relative;
-  top: 20px;
+  margin-right: 23px;
+  padding-top: 32px;
   width: 10%;
   font-size: 1em;
+  font-weight: 500;
+  color: #000000;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.5;
+}
+
+.cardDish .listCheck {
+  -webkit-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+  height: 100%;
+  width: 0;
+  background-color: #99e2d0;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.cardDish .fa-check-circle {
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  opacity: 0;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.cardDish:hover .fa-check-circle {
+  opacity: 1;
+  -webkit-animation: rotation 0.5s linear;
+          animation: rotation 0.5s linear;
+}
+
+.cardDish:hover .listCheck {
+  width: 16%;
+}
+
+@media all and (min-width: 768px) {
+  .cardDish:hover .listCheck {
+    width: 14%;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .cardDish:hover .listCheck {
+    width: 14%;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .cardDish:hover .listCheck {
+    width: 14%;
+  }
+}
+
+.cardDish:hover h3 {
+  width: 70%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.cardDish:hover p {
+  width: 70%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.cardDish:hover .prix {
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+/*  Rotation icone check*/
+@-webkit-keyframes rotation {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Animation Menu*/
+.cardDish {
+  -webkit-animation: move-plate 2s forwards;
+          animation: move-plate 2s forwards;
+}
+
+.cardDish-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.cardDish-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.cardDish-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.cardDish-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.cardDish-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.cardDish-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.cardDish-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.cardDish-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.cardDish-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.cardDish-10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes move-plate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes move-plate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .btn-command {

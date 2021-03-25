@@ -14,16 +14,17 @@
   
   @mixin button-hover {
     box-shadow: 0px 3px 4px 2px darken($color: $shadow, $amount: 40);
-    background: linear-gradient(
-      0,
-      lighten($color: $color-primary, $amount: 5),
-      lighten($color: $color-secondary, $amount: 5)
-    );
+    background: linear-gradient(0,lighten($color: $color-primary, $amount: 5),
+    lighten($color: $color-secondary, $amount: 5));
     transition: 750ms;
   }
   /*Responsive*/
 
-  
+  @mixin mobile-sm {
+    @media all and (min-width: 360px){
+      @content;
+    }
+  }
 
   @mixin tablet {
     @media all and (min-width: 768px) {
