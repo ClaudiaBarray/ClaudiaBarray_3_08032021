@@ -133,7 +133,7 @@ form {
     position: relative;
     
     @include tablet {
-      width: 38%;
+      width: 35%;
       font-size: 1em;
       padding: 20px 30px 20px 10px;
       margin: 30px 2% 30px 2%;
@@ -141,7 +141,7 @@ form {
       box-shadow: 0 1px 6px lighten($color: $footer, $amount: 60);
     }
     @include desktop {
-      width: 40%;
+      width: 38%;
       font-size: 1.05em;
       padding: 20px 0 20px 60px;
       margin: 30px 2% 30px 2%;
