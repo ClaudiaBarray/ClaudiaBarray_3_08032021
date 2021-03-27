@@ -612,6 +612,12 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
+@media all and (min-width: 360px) {
+  .restaurants h2 {
+    margin-left: 20px;
+  }
+}
+
 @media all and (min-width: 768px) {
   .restaurants h2 {
     text-align: center;
@@ -777,6 +783,7 @@ form .fa-map-marker-alt {
   position: absolute;
   right: 38px;
   top: 55px;
+  cursor: pointer;
 }
 
 @media all and (min-width: 360px) {
@@ -847,6 +854,7 @@ form .fa-map-marker-alt {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  cursor: pointer;
   width: 100%;
   padding: 10px 10px;
   height: 78px;
@@ -866,8 +874,8 @@ form .fa-map-marker-alt {
 }
 
 .cardDish__coll {
-  width: 90%;
-  margin: 0;
+  width: 100%;
+  margin-left: 5px;
 }
 
 .cardDish h3 {

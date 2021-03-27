@@ -168,6 +168,9 @@ form {
     width: 370px;
     margin: 0px auto;
     padding-bottom: 20px;
+    @include mobile-sm{
+      margin-left: 20px;
+    }
     @include tablet{
       text-align: center;
     }
@@ -178,6 +181,7 @@ form {
     flex-direction: column;
     width: 370px;
     margin: auto;
+    
     @include tablet{
       flex-direction:row;
       flex-wrap: wrap;
@@ -209,7 +213,8 @@ form {
         &__palette,
         &__francaise,
         &__delice {
-          top: 1px;  
+          top: 1px; 
+          
         }
         &__note {
           top: -10px;
