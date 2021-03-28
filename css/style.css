@@ -8,21 +8,19 @@
 
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
-a:visited, a:active, a:focus {
+a:visited,
+a:active,
+a:focus {
   outline: none;
 }
 
 a {
   -webkit-text-decoration-line: none;
-  text-decoration-line: none;
-}
-
-button:hover {
-  cursor: pointer;
+          text-decoration-line: none;
 }
 
 /*  Bouton page Accueil  */
@@ -149,13 +147,13 @@ button:hover {
   border: 8px solid transparent;
   border-top-color: #9356dc;
   margin: 0 auto;
-  width: 12rem;
-  height: 12rem;
+  width: 192px;
+  height: 192px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -7rem;
-  margin-top: -4.5rem;
+  margin-left: -112px;
+  margin-top: -72px;
   border-radius: 50%;
   z-index: 1001;
   -webkit-animation: loader 1.5s linear 0s infinite,  loader-opacity 0.4s ease-in-out 2s forwards;
@@ -607,14 +605,13 @@ form .fa-map-marker-alt {
 }
 
 .restaurants h2 {
-  width: 370px;
-  margin: 0px auto;
+  margin-left: 30px;
   padding-bottom: 20px;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 340px) {
   .restaurants h2 {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 
@@ -786,7 +783,7 @@ form .fa-map-marker-alt {
   cursor: pointer;
 }
 
-@media all and (min-width: 360px) {
+@media all and (min-width: 340px) {
   .listBase__title__heart {
     margin-right: -12px;
   }
@@ -843,6 +840,37 @@ form .fa-map-marker-alt {
   margin: 5px 0;
 }
 
+.listBase__heart {
+  position: absolute;
+  right: 38px;
+  top: 55px;
+  cursor: pointer;
+}
+
+@media all and (min-width: 340px) {
+  .listBase__heart {
+    margin-right: -12px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .listBase__heart {
+    margin-right: 210px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .listBase__heart {
+    margin-right: 380px;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .listBase__heart {
+    margin-right: 420px;
+  }
+}
+
 .cardDish {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -853,7 +881,6 @@ form .fa-map-marker-alt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   cursor: pointer;
   width: 100%;
   padding: 10px 10px;

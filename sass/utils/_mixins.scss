@@ -21,7 +21,7 @@
   /*Responsive*/
 
   @mixin mobile-sm {
-    @media all and (min-width: 360px){
+    @media all and (min-width: 340px){
       @content;
     }
   }

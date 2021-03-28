@@ -79,20 +79,38 @@
         border-bottom: solid 3px $color-tertiary;
         margin: 5px 0;
     }
+    &__heart {
+        position: absolute;
+        right: 38px;
+        top: 55px;
+        cursor: pointer;
+        @include mobile-sm {
+            margin-right: -12px;
+        }
+        @include tablet {
+            margin-right: 210px;
+        }
+        @include desktop {
+            margin-right: 380px;
+        }
+        @include desktop-xl {
+            margin-right: 420px;
+        }
+    }
 }
 .cardDish {
     box-sizing: border-box;
     position: relative;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    
     cursor: pointer;
     width: 100%;
     padding: 10px 10px;
     height: 78px;
     margin: 20px 0;
     line-height: 1.6;
-    background-color:$background-white;
+    background-color: $background-white;
     border-radius: 20px;
     box-shadow: 1px 0 15px 2px lighten($footer, 70);
     @include tablet {
@@ -103,7 +121,6 @@
     &__coll {
         width: 100%;
         margin-left: 5px;
-        
     }
 
     h3 {
@@ -122,7 +139,7 @@
     p {
         font-size: 1em;
         font-weight: 300;
-        color:$primary-font-color;
+        color: $primary-font-color;
         margin-top: 1px;
         overflow: hidden;
         white-space: nowrap;
@@ -157,7 +174,7 @@
         right: 20px;
         top: 27px;
         opacity: 0;
-        color:$secondary-font-color;
+        color: $secondary-font-color;
         font-size: 1.5em;
     }
     &:hover {
@@ -207,7 +224,7 @@
 /* Animation Menu*/
 .cardDish {
     animation: move-plate 2s forwards;
-    @for $i from 1 to 11 {
+    @for $i from 1 through 10 {
         &-#{$i} {
             animation-delay: 0.1s * $i;
         }

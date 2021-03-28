@@ -165,11 +165,10 @@ form {
   padding: 40px 0px 40px 0px;
   margin-top: 60px;
   h2 {
-    width: 370px;
-    margin: 0px auto;
+    margin-left: 30px;
     padding-bottom: 20px;
     @include mobile-sm{
-      margin-left: 20px;
+      margin-left: 30px;
     }
     @include tablet{
       text-align: center;
@@ -197,7 +196,8 @@ form {
       box-shadow: 1px 3px 3px lighten($primary-font-color, 90%);
       border-radius: 17px;
       overflow: hidden;
-      height: 270px;
+      height: 270px; 
+      
       
       @include tablet{
         flex:35%;

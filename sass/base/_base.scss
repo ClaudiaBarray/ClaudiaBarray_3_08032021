@@ -1,24 +1,19 @@
-
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
-
-a:visited, a:active, a:focus {
+a:visited,
+a:active,
+a:focus {
   outline: none;
 }
 
 a {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-}
-
-button:hover {
-  cursor: pointer;
+  text-decoration-line: none;
 }
