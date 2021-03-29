@@ -541,8 +541,8 @@ form .fa-map-marker-alt {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1em;
-  margin-left: -1em;
+  width: 16px;
+  margin-left: -16px;
   position: absolute;
   left: 7px;
   z-index: 1;
@@ -827,6 +827,9 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 768px) {
   .listBase h2 {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
