@@ -33,9 +33,10 @@
 
         &__heart {
             position: absolute;
+            cursor: pointer;
             right: 38px;
             top: 55px;
-            cursor: pointer;
+            
             @include mobile-sm {
                 margin-right: -12px;
             }

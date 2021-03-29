@@ -728,6 +728,7 @@ form .fa-map-marker-alt {
   position: absolute;
   right: 25px;
   bottom: 25px;
+  cursor: pointer;
 }
 
 .imageTop {
@@ -778,9 +779,9 @@ form .fa-map-marker-alt {
 
 .listBase__title__heart {
   position: absolute;
+  cursor: pointer;
   right: 38px;
   top: 55px;
-  cursor: pointer;
 }
 
 @media all and (min-width: 340px) {
