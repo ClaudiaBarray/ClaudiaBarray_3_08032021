@@ -435,19 +435,19 @@ form .fa-map-marker-alt {
 }
 
 /*fonctionnement*/
-#fonc {
+.fonc {
   width: 100%;
   margin-top: 50px;
   /*  Suppression puces liste ordonnée  */
   /*  Rétablissement puce numérotées avec mise en forme  */
 }
 
-#fonc h2 {
+.fonc h2 {
   margin-left: 6%;
 }
 
 @media all and (min-width: 768px) {
-  #fonc h2 {
+  .fonc h2 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -460,7 +460,7 @@ form .fa-map-marker-alt {
 }
 
 @media all and (min-width: 1025px) {
-  #fonc h2 {
+  .fonc h2 {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -472,16 +472,16 @@ form .fa-map-marker-alt {
   }
 }
 
-#fonc ol {
+.fonc ol {
   width: 85%;
   padding: 0;
 }
 
-#fonc .fas {
+.fonc .fas {
   padding-left: 5%;
 }
 
-#fonc .fa-mobile-alt {
+.fonc .fa-mobile-alt {
   -webkit-transform: scale(1.55, 1.3);
           transform: scale(1.55, 1.3);
   margin-left: 3px;
@@ -489,23 +489,23 @@ form .fa-map-marker-alt {
   padding-right: 30px;
 }
 
-#fonc .fa-list {
+.fonc .fa-list {
   margin-right: 30px;
   padding-right: 10px;
 }
 
-#fonc .fa-store {
+.fonc .fa-store {
   padding-right: 30px;
 }
 
-#fonc ol {
+.fonc ol {
   margin: auto;
   list-style: none;
   counter-reset: li;
 }
 
 @media all and (min-width: 768px) {
-  #fonc ol {
+  .fonc ol {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -519,7 +519,7 @@ form .fa-map-marker-alt {
 }
 
 @media all and (min-width: 1025px) {
-  #fonc ol {
+  .fonc ol {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,7 +529,7 @@ form .fa-map-marker-alt {
   }
 }
 
-#fonc li::before {
+.fonc li::before {
   content: counter(li);
   color: #ffffff;
   padding: 2px 0px 2px 6px;
@@ -548,7 +548,7 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
-#fonc li {
+.fonc li {
   counter-increment: li;
   padding: 25px;
   background-color: #f6f6f6;
@@ -560,7 +560,7 @@ form .fa-map-marker-alt {
 }
 
 @media all and (min-width: 768px) {
-  #fonc li {
+  .fonc li {
     width: 35%;
     font-size: 1em;
     padding: 20px 30px 20px 10px;
@@ -572,7 +572,7 @@ form .fa-map-marker-alt {
 }
 
 @media all and (min-width: 1025px) {
-  #fonc li {
+  .fonc li {
     width: 38%;
     font-size: 1.05em;
     padding: 20px 0 20px 60px;
@@ -583,7 +583,7 @@ form .fa-map-marker-alt {
   }
 }
 
-#fonc li:hover {
+.fonc li:hover {
   background-color: #f2eafb;
   -webkit-box-shadow: 0 3px 8px #c9abee;
           box-shadow: 0 3px 8px #c9abee;
@@ -591,7 +591,7 @@ form .fa-map-marker-alt {
   transition: 300ms;
 }
 
-#fonc li:hover .icon_fonc {
+.fonc li:hover .icon_fonc {
   color: #9356dc;
   -webkit-transition: 300ms;
   transition: 300ms;
