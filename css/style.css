@@ -840,37 +840,6 @@ form .fa-map-marker-alt {
   margin: 5px 0;
 }
 
-.listBase__heart {
-  position: absolute;
-  right: 38px;
-  top: 55px;
-  cursor: pointer;
-}
-
-@media all and (min-width: 340px) {
-  .listBase__heart {
-    margin-right: -12px;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .listBase__heart {
-    margin-right: 210px;
-  }
-}
-
-@media all and (min-width: 1025px) {
-  .listBase__heart {
-    margin-right: 380px;
-  }
-}
-
-@media all and (min-width: 1380px) {
-  .listBase__heart {
-    margin-right: 420px;
-  }
-}
-
 .cardDish {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
