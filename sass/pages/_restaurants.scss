@@ -34,12 +34,10 @@
         &__heart {
             position: absolute;
             cursor: pointer;
-            right: 38px;
+            right: 30px;
             top: 55px;
             
-            @include mobile-sm {
-                margin-right: -12px;
-            }
+            
             @include tablet {
                 margin-right: 210px;
             }
@@ -106,7 +104,7 @@
     
 
     &__coll {
-        width: 100%;
+        width: 80%;
         margin-left: 5px;
     }
 

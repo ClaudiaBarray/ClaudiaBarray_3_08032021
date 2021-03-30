@@ -609,7 +609,7 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
-@media all and (min-width: 340px) {
+@media all and (max-width: 330px) {
   .restaurants h2 {
     margin-left: 30px;
   }
@@ -629,7 +629,7 @@ form .fa-map-marker-alt {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 370px;
+  width: 360px;
   margin: auto;
 }
 
@@ -780,14 +780,8 @@ form .fa-map-marker-alt {
 .listBase__title__heart {
   position: absolute;
   cursor: pointer;
-  right: 38px;
+  right: 30px;
   top: 55px;
-}
-
-@media all and (min-width: 340px) {
-  .listBase__title__heart {
-    margin-right: -12px;
-  }
 }
 
 @media all and (min-width: 768px) {
@@ -874,7 +868,7 @@ form .fa-map-marker-alt {
 }
 
 .cardDish__coll {
-  width: 100%;
+  width: 80%;
   margin-left: 5px;
 }
 
