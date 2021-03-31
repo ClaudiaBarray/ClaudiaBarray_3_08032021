@@ -64,6 +64,9 @@
         padding-top: 22px;
         padding-left: 10px;
         margin-top: 10px;
+        @include mobile-sm {
+            padding-left: 2px;
+        }
         @include tablet {
             justify-content: space-between;
             max-width: 500px;
@@ -100,9 +103,6 @@
         margin: 20px auto;
     }
       
-    
-    
-
     &__coll {
         width: 80%;
         margin-left: 5px;
