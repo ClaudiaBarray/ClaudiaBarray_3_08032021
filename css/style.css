@@ -139,8 +139,8 @@ a {
   z-index: 1001;
   width: 100%;
   height: 100%;
-  -webkit-animation: hide-section 0.01s 2.2s forwards;
-          animation: hide-section 0.01s 2.2s forwards;
+  -webkit-animation: hide-section 1.5s ease-in-out 0.5s forwards;
+          animation: hide-section 1.5s ease-in-out 0.5s forwards;
 }
 
 .spinner__cercle {
@@ -152,12 +152,12 @@ a {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -112px;
-  margin-top: -72px;
+  margin-left: -100px;
+  margin-top: -112px;
   border-radius: 50%;
   z-index: 1001;
-  -webkit-animation: loader 1.5s linear 0s infinite,  loader-opacity 0.4s ease-in-out 2s forwards;
-          animation: loader 1.5s linear 0s infinite,  loader-opacity 0.4s ease-in-out 2s forwards;
+  -webkit-animation: loader 1.5s linear 0s infinite,  loader-opacity 0.7s ease-in-out 3s forwards;
+          animation: loader 1.5s linear 0s infinite,  loader-opacity 0.7s ease-in-out 3s forwards;
 }
 
 .spinner__cercle::before {
@@ -236,16 +236,16 @@ a {
 
 @-webkit-keyframes hide-section {
   to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
     opacity: 0;
   }
 }
 
 @keyframes hide-section {
   to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
     opacity: 0;
   }
 }
@@ -482,19 +482,21 @@ form .fa-map-marker-alt {
 }
 
 .fonc .fa-mobile-alt {
-  -webkit-transform: scale(1.55, 1.3);
-          transform: scale(1.55, 1.3);
+  font-size: 1.5em;
+  color: gray;
   margin-left: 3px;
   margin-right: 10px;
   padding-right: 30px;
 }
 
 .fonc .fa-list {
+  color: gray;
   margin-right: 30px;
   padding-right: 10px;
 }
 
 .fonc .fa-store {
+  color: gray;
   padding-right: 30px;
 }
 
