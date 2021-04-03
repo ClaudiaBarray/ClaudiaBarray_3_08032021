@@ -36,7 +36,10 @@ footer {
             a {
                 color: $background-white;
             }
-            
+            @include tablet{
+                display: flex;
+                justify-content: center;
+                }  
         }
         .fa-utensils {
             font-size: 0.9rem;
@@ -47,10 +50,7 @@ footer {
         .lighter-link {
             font-weight: normal;
         }
-        @include tablet{
-            display: flex;
-            justify-content: space-around;
-            }
+        
     }
     
 }

@@ -80,21 +80,38 @@ form {
     margin-left: 3px;
     margin-right: 10px;
     padding-right: 30px;
+    @include mobile-sm{
+      margin-right: -2px;
+    }
+  
   }
    .fa-list {
     color: $icons;
     margin-right: 30px;
     padding-right: 10px;
+    @include mobile-sm{
+      margin-right: 12px;
+    }
   }
    .fa-store {
      color: $icons;
     padding-right: 30px;
+    @include mobile-sm{
+      margin-right: -10px;
+    }
   }
   /*  Suppression puces liste ordonnée  */
    ol {
     margin: auto;
     list-style: none;
     counter-reset: li;
+    @include mobile-sm{
+      width: 90%;
+      
+      
+      
+    }
+    
     @include tablet {
       width: 100%;
       display: flex;
@@ -122,6 +139,9 @@ form {
     position: absolute;
     left: 7px;
     z-index: 1;
+    @include mobile-sm{
+      margin-top: -7px;
+    }
   }
    li {
     counter-increment: li;
@@ -131,6 +151,10 @@ form {
     border-radius: 15px;
     box-shadow: 0 1px 6px lighten($color: $footer, $amount: 60);
     position: relative;
+    @include mobile-sm{
+      width: 100%;
+      height: 62px;
+    }
 
     @include tablet {
       width: 35%;
@@ -168,7 +192,7 @@ form {
     margin-left: 30px;
     padding-bottom: 20px;
     @include mobile-sm {
-      margin-left: 30px;
+      margin-left: 16px;
     }
     @include tablet {
       text-align: center;
@@ -180,13 +204,13 @@ form {
     flex-direction: column;
     width: 360px;
     margin: auto;
+    
 
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-between;
-      margin: auto;
-      width: 860px;
+       width: 800px;
+       
     }
 
     &__card {
@@ -196,6 +220,14 @@ form {
       border-radius: 17px;
       overflow: hidden;
       height: 270px;
+      width: 360px;
+
+     @include mobile-sm{
+       height: 240px;
+       width: 310px;
+       margin-left: 4px;
+     }
+      
 
       @include tablet {
         flex: 35%;
@@ -212,15 +244,11 @@ form {
         &__francaise,
         &__delice {
           top: 1px;
-          @include mobile-sm{
-            width: 65%;
-          }
+          
         }
         &__note {
           top: -10px;
-          @include mobile-sm{
-            width: 65%;
-          }
+          
         }
       }
 

@@ -294,6 +294,13 @@ header .fa-arrow-left {
   left: 12%;
 }
 
+@media all and (max-width: 330px) {
+  header .fa-arrow-left {
+    left: 8%;
+    top: 40px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,6 +358,17 @@ footer ul li a {
   color: #ffffff;
 }
 
+@media all and (min-width: 768px) {
+  footer ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 footer ul .fa-utensils {
   font-size: 0.9rem;
 }
@@ -361,16 +379,6 @@ footer ul .fa-hands-helping {
 
 footer ul .lighter-link {
   font-weight: normal;
-}
-
-@media all and (min-width: 768px) {
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
 }
 
 form {
@@ -489,10 +497,22 @@ form .fa-map-marker-alt {
   padding-right: 30px;
 }
 
+@media all and (max-width: 330px) {
+  .fonc .fa-mobile-alt {
+    margin-right: -2px;
+  }
+}
+
 .fonc .fa-list {
   color: gray;
   margin-right: 30px;
   padding-right: 10px;
+}
+
+@media all and (max-width: 330px) {
+  .fonc .fa-list {
+    margin-right: 12px;
+  }
 }
 
 .fonc .fa-store {
@@ -500,10 +520,22 @@ form .fa-map-marker-alt {
   padding-right: 30px;
 }
 
+@media all and (max-width: 330px) {
+  .fonc .fa-store {
+    margin-right: -10px;
+  }
+}
+
 .fonc ol {
   margin: auto;
   list-style: none;
   counter-reset: li;
+}
+
+@media all and (max-width: 330px) {
+  .fonc ol {
+    width: 90%;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -550,6 +582,12 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
+@media all and (max-width: 330px) {
+  .fonc li::before {
+    margin-top: -7px;
+  }
+}
+
 .fonc li {
   counter-increment: li;
   padding: 25px;
@@ -559,6 +597,13 @@ form .fa-map-marker-alt {
   -webkit-box-shadow: 0 1px 6px #cecece;
           box-shadow: 0 1px 6px #cecece;
   position: relative;
+}
+
+@media all and (max-width: 330px) {
+  .fonc li {
+    width: 100%;
+    height: 62px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -613,7 +658,7 @@ form .fa-map-marker-alt {
 
 @media all and (max-width: 330px) {
   .restaurants h2 {
-    margin-left: 30px;
+    margin-left: 16px;
   }
 }
 
@@ -643,11 +688,7 @@ form .fa-map-marker-alt {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: auto;
-    width: 860px;
+    width: 800px;
   }
 }
 
@@ -659,6 +700,15 @@ form .fa-map-marker-alt {
   border-radius: 17px;
   overflow: hidden;
   height: 270px;
+  width: 360px;
+}
+
+@media all and (max-width: 330px) {
+  .restaurants__container__card {
+    height: 240px;
+    width: 310px;
+    margin-left: 4px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -682,20 +732,8 @@ form .fa-map-marker-alt {
   top: 1px;
 }
 
-@media all and (max-width: 330px) {
-  .restaurants__container__card__img__palette, .restaurants__container__card__img__francaise, .restaurants__container__card__img__delice {
-    width: 65%;
-  }
-}
-
 .restaurants__container__card__img__note {
   top: -10px;
-}
-
-@media all and (max-width: 330px) {
-  .restaurants__container__card__img__note {
-    width: 65%;
-  }
 }
 
 .restaurants__container__card__status {
@@ -791,6 +829,20 @@ form .fa-map-marker-alt {
   }
 }
 
+.listBase__title h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.7em;
+  font-weight: normal;
+  padding-left: 1px;
+}
+
+@media all and (max-width: 330px) {
+  .listBase__title h1 {
+    margin-left: -12px;
+    font-size: 1.5em;
+  }
+}
+
 .listBase__title__heart {
   position: absolute;
   cursor: pointer;
@@ -800,7 +852,7 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 768px) {
   .listBase__title__heart {
-    margin-right: 210px;
+    margin-right: 240px;
   }
 }
 
@@ -814,13 +866,6 @@ form .fa-map-marker-alt {
   .listBase__title__heart {
     margin-right: 420px;
   }
-}
-
-.listBase__title h1 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.7em;
-  font-weight: normal;
-  padding-left: 1px;
 }
 
 .listBase h2 {

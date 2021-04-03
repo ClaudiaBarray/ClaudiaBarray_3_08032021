@@ -31,15 +31,27 @@
             margin: auto;
         }
 
+        
+
+        h1 {
+            font-family: $police-logo_titre, sans-serif;
+            font-size: 1.7em;
+            font-weight: normal;
+            padding-left: 1px;
+            @include mobile-sm{
+                margin-left: -12px;
+                font-size: 1.5em;
+            }
+        }
         &__heart {
-            position: absolute;
+            position:absolute;
             cursor: pointer;
             right: 30px;
             top: 55px;
-            
+        
             
             @include tablet {
-                margin-right: 210px;
+                margin-right: 240px;
             }
             @include desktop {
                 margin-right: 380px;
@@ -47,15 +59,9 @@
             @include desktop-xl {
                 margin-right: 420px;
             }
-        }
-
-        h1 {
-            font-family: $police-logo_titre, sans-serif;
-            font-size: 1.7em;
-            font-weight: normal;
-            padding-left: 1px;
-        }
+        }   
     }
+    
     h2 {
         text-transform: uppercase;
         font-weight: 300;
@@ -74,6 +80,7 @@
             margin-right: auto;
         }
     }
+    
 
     h2::after {
         content: "";

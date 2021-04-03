@@ -24,5 +24,9 @@ header{
         color:$primary-font-color;
         top: 30px;
         left: 12%;
+        @include mobile-sm{
+            left: 8%;
+            top: 40px;
+        }
     }
 }
