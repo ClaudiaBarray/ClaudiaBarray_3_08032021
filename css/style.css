@@ -318,6 +318,12 @@ footer {
   padding: 18px;
 }
 
+@media all and (max-width: 330px) {
+  footer {
+    width: 125%;
+  }
+}
+
 footer a {
   color: #fff;
 }
@@ -391,7 +397,7 @@ form .presentation {
   margin-top: -50px;
 }
 
-form .presentation h1 {
+form .presentation h2 {
   margin-top: 50px;
   font-family: "Roboto";
   font-size: 1.8em;
@@ -852,7 +858,7 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 768px) {
   .listBase__title__heart {
-    margin-right: 240px;
+    margin-right: 220px;
   }
 }
 

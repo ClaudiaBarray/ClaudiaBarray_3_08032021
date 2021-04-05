@@ -1,12 +1,13 @@
 form {
   font-family: $police-text;
   text-align: center;
+  
 
   .presentation {
     background-color: $color-background;
     margin-top: -50px;
 
-    h1 {
+    h2 {
       margin-top: 50px;
       font-family: $police-text;
       font-size: 1.8em;
@@ -188,6 +189,7 @@ form {
   width: 100%;
   padding: 40px 0px 40px 0px;
   margin-top: 60px;
+  
   h2 {
     margin-left: 30px;
     padding-bottom: 20px;

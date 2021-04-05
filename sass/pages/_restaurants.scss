@@ -44,6 +44,7 @@
             }
         }
         &__heart {
+            
             position:absolute;
             cursor: pointer;
             right: 30px;
@@ -51,7 +52,7 @@
         
             
             @include tablet {
-                margin-right: 240px;
+                margin-right: 220px;
             }
             @include desktop {
                 margin-right: 380px;
