@@ -33,7 +33,7 @@
 
         
 
-        h1 {
+       & h2 {
             font-family: $police-logo_titre, sans-serif;
             font-size: 1.7em;
             font-weight: normal;
@@ -49,13 +49,15 @@
             cursor: pointer;
             right: 30px;
             top: 55px;
-        
-            
             @include tablet {
-                margin-right: 220px;
+                padding-right: 120px;
             }
+            @include tablet-vt{
+                margin-right: 110px;
+            }
+            
             @include desktop {
-                margin-right: 380px;
+                margin-right: 220px;
             }
             @include desktop-xl {
                 margin-right: 420px;
@@ -63,7 +65,7 @@
         }   
     }
     
-    h2 {
+    h3 {
         text-transform: uppercase;
         font-weight: 300;
         font-size: 1.1em;
@@ -83,7 +85,7 @@
     }
     
 
-    h2::after {
+    h3::after {
         content: "";
         display: block;
         width: 45px;
@@ -116,7 +118,7 @@
         margin-left: 5px;
     }
 
-    h3 {
+    h4 {
         font-size: 1.1em;
         font-weight: 500;
         color: $primary-font-color;
@@ -188,7 +190,7 @@
                 width: 14%;
             }
         }
-        h3 {
+        h4 {
             width: 70%;
             transition-duration: 1s;
         }
