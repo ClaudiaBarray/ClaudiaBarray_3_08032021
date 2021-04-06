@@ -858,13 +858,13 @@ form .fa-map-marker-alt {
 
 @media all and (min-width: 768px) {
   .listBase__title__heart {
-    padding-right: 120px;
+    margin-right: 120px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .listBase__title__heart {
-    margin-right: 110px;
+    margin-right: 220px;
   }
 }
 
