@@ -4,7 +4,7 @@
     padding: 0;
     background: transparent;
     &:hover,
-    &:active {
+    &:active{
         outline: none;
         .far {
             background: linear-gradient(60deg, $color-secondary, $color-primary);

@@ -959,8 +959,6 @@ form .fa-map-marker-alt {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .cardDish p {
@@ -972,8 +970,6 @@ form .fa-map-marker-alt {
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .cardDish .prix {
