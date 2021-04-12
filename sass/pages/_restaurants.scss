@@ -31,7 +31,25 @@
             margin: auto;
         }
 
-        
+        &__heart {
+            position: absolute;
+            cursor: pointer;
+            right: 30px;
+            top: 55px;
+            @include tablet {
+                margin-right: 120px;
+            }
+            @include tablet-vt{
+                margin-right: 220px;
+            }
+            
+            @include desktop {
+                margin-right: 220px;
+            }
+            @include desktop-xl {
+                margin-right: 420px;
+            }
+        }   
 
        & h2 {
             font-family: $police-logo_titre, sans-serif;
@@ -44,8 +62,7 @@
             }
         }
         &__heart {
-            
-            position:absolute;
+            position: absolute;
             cursor: pointer;
             right: 30px;
             top: 55px;
@@ -216,24 +233,29 @@
     }
 }
 
+
 /* Animation Menu*/
-.cardDish {
-    animation: move-plate 2s forwards;
-    @for $i from 1 through 10 {
-        &-#{$i} {
-            animation-delay: 0.1s * $i;
-        }
-    }
+.cardDish{
+    opacity: 0;
 }
 
-@keyframes move-plate {
+@keyframes move-plate{
     0% {
+        
         opacity: 0;
         transform: translateY(30px);
     }
-    100% {
+ 
+    100%{
+        
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@for $i from 1 through 10 {
+    .cardDish__order-#{$i}{
+     animation: move-plate 1s  .2s * $i  forwards;
     }
 }
 
@@ -242,3 +264,4 @@
     justify-content: center;
     padding-top: 40px;
 }
+

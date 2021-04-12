@@ -66,7 +66,7 @@ a {
 }
 
 .heart-button {
-  position: relative;
+  position: absolute;
   border: none;
   padding: 0;
   background: transparent;
@@ -294,7 +294,7 @@ header .fa-arrow-left {
   left: 12%;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   header .fa-arrow-left {
     left: 8%;
     top: 40px;
@@ -316,12 +316,6 @@ footer {
   color: #ffffff;
   line-height: 1.6rem;
   padding: 18px;
-}
-
-@media all and (max-width: 330px) {
-  footer {
-    width: 125%;
-  }
 }
 
 footer a {
@@ -503,7 +497,7 @@ form .fa-map-marker-alt {
   padding-right: 30px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc .fa-mobile-alt {
     margin-right: -2px;
   }
@@ -515,7 +509,7 @@ form .fa-map-marker-alt {
   padding-right: 10px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc .fa-list {
     margin-right: 12px;
   }
@@ -526,7 +520,7 @@ form .fa-map-marker-alt {
   padding-right: 30px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc .fa-store {
     margin-right: -10px;
   }
@@ -538,7 +532,7 @@ form .fa-map-marker-alt {
   counter-reset: li;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc ol {
     width: 90%;
   }
@@ -588,7 +582,7 @@ form .fa-map-marker-alt {
   z-index: 1;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc li::before {
     margin-top: -7px;
   }
@@ -605,10 +599,10 @@ form .fa-map-marker-alt {
   position: relative;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .fonc li {
     width: 100%;
-    height: 62px;
+    height: 50px;
   }
 }
 
@@ -662,7 +656,7 @@ form .fa-map-marker-alt {
   padding-bottom: 20px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .restaurants h2 {
     margin-left: 16px;
   }
@@ -682,8 +676,6 @@ form .fa-map-marker-alt {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 360px;
-  margin: auto;
 }
 
 @media all and (min-width: 768px) {
@@ -694,7 +686,6 @@ form .fa-map-marker-alt {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 800px;
   }
 }
 
@@ -705,15 +696,22 @@ form .fa-map-marker-alt {
           box-shadow: 1px 3px 3px #e6e6e6;
   border-radius: 17px;
   overflow: hidden;
-  height: 270px;
-  width: 360px;
+  height: 240px;
+  width: 330px;
+  margin-left: 30px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .restaurants__container__card {
     height: 240px;
-    width: 310px;
-    margin-left: 4px;
+    width: 300px;
+    margin-left: 8px;
+  }
+}
+
+@media all and (min-width: 414px) {
+  .restaurants__container__card {
+    margin-left: 40px;
   }
 }
 
@@ -835,6 +833,37 @@ form .fa-map-marker-alt {
   }
 }
 
+.listBase__title__heart {
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  top: 55px;
+}
+
+@media all and (min-width: 768px) {
+  .listBase__title__heart {
+    margin-right: 120px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .listBase__title__heart {
+    margin-right: 220px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+  .listBase__title__heart {
+    margin-right: 220px;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .listBase__title__heart {
+    margin-right: 420px;
+  }
+}
+
 .listBase__title h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.7em;
@@ -842,7 +871,7 @@ form .fa-map-marker-alt {
   padding-left: 1px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .listBase__title h2 {
     margin-left: -12px;
     font-size: 1.5em;
@@ -890,7 +919,7 @@ form .fa-map-marker-alt {
   margin-top: 10px;
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 320px) {
   .listBase h3 {
     padding-left: 2px;
   }
@@ -1073,58 +1102,7 @@ form .fa-map-marker-alt {
 
 /* Animation Menu*/
 .cardDish {
-  -webkit-animation: move-plate 2s forwards;
-          animation: move-plate 2s forwards;
-}
-
-.cardDish-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.cardDish-2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.cardDish-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
-.cardDish-4 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.cardDish-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-.cardDish-6 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.cardDish-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
-.cardDish-8 {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.cardDish-9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-
-.cardDish-10 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes move-plate {
@@ -1151,6 +1129,56 @@ form .fa-map-marker-alt {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.cardDish__order-1 {
+  -webkit-animation: move-plate 1s 0.2s forwards;
+          animation: move-plate 1s 0.2s forwards;
+}
+
+.cardDish__order-2 {
+  -webkit-animation: move-plate 1s 0.4s forwards;
+          animation: move-plate 1s 0.4s forwards;
+}
+
+.cardDish__order-3 {
+  -webkit-animation: move-plate 1s 0.6s forwards;
+          animation: move-plate 1s 0.6s forwards;
+}
+
+.cardDish__order-4 {
+  -webkit-animation: move-plate 1s 0.8s forwards;
+          animation: move-plate 1s 0.8s forwards;
+}
+
+.cardDish__order-5 {
+  -webkit-animation: move-plate 1s 1s forwards;
+          animation: move-plate 1s 1s forwards;
+}
+
+.cardDish__order-6 {
+  -webkit-animation: move-plate 1s 1.2s forwards;
+          animation: move-plate 1s 1.2s forwards;
+}
+
+.cardDish__order-7 {
+  -webkit-animation: move-plate 1s 1.4s forwards;
+          animation: move-plate 1s 1.4s forwards;
+}
+
+.cardDish__order-8 {
+  -webkit-animation: move-plate 1s 1.6s forwards;
+          animation: move-plate 1s 1.6s forwards;
+}
+
+.cardDish__order-9 {
+  -webkit-animation: move-plate 1s 1.8s forwards;
+          animation: move-plate 1s 1.8s forwards;
+}
+
+.cardDish__order-10 {
+  -webkit-animation: move-plate 1s 2s forwards;
+          animation: move-plate 1s 2s forwards;
 }
 
 .btn-command {
